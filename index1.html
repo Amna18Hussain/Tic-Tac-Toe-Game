@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+    <h1>Tic Tac Toe Game in JS</h1>
+    <div class="container">
+        <div class="left-side">
+            <div class="row">Tic</div>
+            <div class="row">Tac</div>
+            <div class="row">Toe</div>
+
+            <div class="button" id="restart">Restart</div>
+            <div id="winner"></div>
+        </div>
+
+        <div class="center">
+            <div class="gameborder">
+                <div class="row">
+                    <div class="square bottom right" id="00"></div>
+                    <div class="square bottom right" id="01"></div>
+                    <div class="square bottom" id="02"></div>
+                </div>
+
+                <div class="row">
+                    <div class="square bottom right" id="10"></div>
+                    <div class="square bottom right" id="11"></div>
+                    <div class="square bottom" id="12"></div>
+                </div>
+
+                <div class="row">
+                    <div class="square right" id="20"></div>
+                    <div class="square right" id="21"></div>
+                    <div class="square" id="22"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="player">
+                <p class="player-name">Player:</p>
+                <p class="score" id="score1">0</p>
+            </div>
+
+            <div class="player">
+                <p class="player-name">Computer:</p>
+                <p class="score" id="score2">0</p>
+            </div>
+
+            <!-- <div class="player">
+                <div class="player_turns">Player Turns:</div>
+                <div class="score">
+                    <p class="turn"></p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
